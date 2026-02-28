@@ -1,0 +1,221 @@
+/* Home.css - Neutral layout with #6a5acd buttons */
+
+/* General styling */
+main {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f9f9f9; /* soft neutral background */
+  color: #333;
+}
+
+/* Hero section */
+.hero-container {
+  text-align: center;
+  background: #f0f0f0; /* light neutral */
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.hero-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Welcome card */
+.welcome-card {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  border-left: 5px solid #6a5acd; /* purple accent */
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.welcome-card span {
+  font-weight: bold;
+  color: #6a5acd; /* purple text */
+}
+
+/* Quick actions */
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.action-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.action-card h3 {
+  color: #6a5acd; /* purple heading */
+  margin-bottom: 0.5rem;
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Quick action buttons */
+.action-card button {
+  padding: 0.6rem 1.2rem;
+  background: #6a5acd; /* purple */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-card button:hover {
+  background: #584fc1; /* slightly darker */
+}
+
+/* Login/Register buttons */
+.buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: #6a5acd; /* purple */
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.buttons a:hover {
+  background: #584fc1; /* slightly darker */
+}
+
+/* Features section */
+/* .features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 2rem;
+} */
+ .features {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.features div {
+  margin: 1rem;
+  flex: 1 1 200px;
+}
+
+
+.features div h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.features div p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Number circles (1,2,3) */
+.features div > div:first-child {
+  width: 50px;
+  height: 50px;
+  background: #6a5acd; /* purple */
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.how-section {
+  margin-top: 60px;
+}
+
+.how-title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+/* Get started section */
+.get-started {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+}
+
+.get-started h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.get-started p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Get started buttons */
+.get-started a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.7rem 1.5rem;
+  background: #6a5acd; /* purple */
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.get-started a:hover {
+  background: #584fc1; /* slightly darker */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}

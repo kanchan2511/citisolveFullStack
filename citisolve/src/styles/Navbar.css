@@ -1,0 +1,109 @@
+
+.navbar {
+  width: 100%;
+  background: #f4f6fb;
+  padding: 16px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #6a5acd;
+}
+
+.navbar-logo i {
+  font-size: 20px;
+  color: #6a5acd;
+}
+
+/* Right side */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 14px;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #e0e7ff;
+  color: #6a5acd;
+}
+
+/* Active link */
+.nav-link.active {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Welcome text */
+.welcome-text {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Login & Register buttons */
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(99, 102, 241, 0.4);
+}
+
+/* Logout button */
+.logout-btn {
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(220, 38, 38, 0.4);
+}
